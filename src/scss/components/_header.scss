@@ -1,0 +1,29 @@
+/* Header */
+.navbar {
+  background-color: black;
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 0 17px;
+
+    #site-title {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      color: white;
+      font-weight: 300;
+
+      li {
+        margin-left: 2.5vw;
+      }
+    }
+  }
+}
