@@ -21,8 +21,14 @@
       color: white;
       font-weight: 300;
 
-      li {
+      a {
+        text-decoration: none;
         margin-left: 2.5vw;
+        color: white;
+
+        a:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

@@ -4923,8 +4923,14 @@ h6,
   font-weight: 300;
 }
 
-.navbar .header-content ul li {
+.navbar .header-content ul a {
+  text-decoration: none;
   margin-left: 2.5vw;
+  color: white;
+}
+
+.navbar .header-content ul a a:hover {
+  text-decoration: underline;
 }
 
 /************************************
@@ -4977,7 +4983,7 @@ h6,
 }
 
 .cta-section--content img {
-  width: 110%;
+  width: 100%;
 }
 
 .featproj-section {
@@ -5010,6 +5016,7 @@ h6,
 
 footer {
   background-color: black;
+  padding: 10px 10px;
 }
 
 footer .col {
@@ -5023,4 +5030,25 @@ footer .site-links a {
 footer .site-outro {
   color: white;
   text-align: right;
+}
+
+.proj-gallery {
+  background-color: black;
+  padding: 80px 10px 0;
+}
+
+.proj-gallery .col-sm-6 {
+  margin-bottom: 35px;
+}
+
+.proj-gallery .proj-img img {
+  width: 100%;
+  margin: auto;
+  padding: 0 0 15px;
+}
+
+.proj-title {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
 }

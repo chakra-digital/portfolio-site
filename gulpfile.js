@@ -4,6 +4,9 @@ var prefix = require('gulp-autoprefixer');
 var copy = require('gulp-copy');
 var browsersync = require('browser-sync');
 var del = require('del');
+var surge = require('gulp-surge');
+
+var deployUrl = 'chakra-digital.surge.sh';
 
 var cleanDist = function (done) {
   del.sync('dist/');
@@ -43,6 +46,13 @@ var startServer = function (done) {
   return done();
 };
 
+var deploy = function (done) {
+  return surge({
+    project: './dist',
+    domain: deployUrl,
+  });
+};
+
 var reloadBrowser = function (done) {
   browsersync.reload();
   done();
@@ -51,3 +61,5 @@ var reloadBrowser = function (done) {
 exports.default = series(cleanDist, buildStyle, copyFiles);
 
 exports.watch = series(exports.default, startServer, watchSrc);
+
+exports.deploy = series(exports.default, deploy);
