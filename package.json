@@ -1,0 +1,27 @@
+{
+  "name": "coding-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "surge": "gulp deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-copy": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-surge": "^0.1.4",
+    "node-sass": "^5.0.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1"
+  },
+  "description": ""
+}

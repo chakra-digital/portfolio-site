@@ -1,0 +1,14 @@
+// Partials
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import 'partials/reset';
+@import 'partials/variables';
+@import 'partials/global';
+@import 'partials/button';
+@import 'partials/type';
+
+// Components
+@import 'components/header';
+
+// Pages
+@import 'pages/homepage';
+@import 'pages/work';
